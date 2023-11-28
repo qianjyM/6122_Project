@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Cat/Dog Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .instructions {
+            font-size: 14px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: calc(100vh - 100px);
+        }
+        .image-container {
+            width: 20%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .upload-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            text-align: center;
+        }
+        .upload-form h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        .upload-button {
+            display: inline-block;
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Cat/Dog Test</h1>
+        <p class="instructions">
+            Please upload an audio file of a cat or dog. Our AI will analyze the sound to determine if it's a cat or a dog!
+        </p>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="/static/dog.jpg" alt="Dog">
+        </div>
+        <div class="upload-form">
+            <!-- Replace the following with the result display -->
+            <h2>AI Inference Result</h2>
+            <p>Result: {{ result }}</p>
+            <p>Processing Time : {{ processing_time }} 秒</p>
+            <button class="upload-button" onclick="location.href='/'">Upload Again</button>
+        </div>
+        <div class="image-container">
+            <img src="/static/cat.jpg" alt="Cat">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Cat/Dog Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .instructions {
+            font-size: 14px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: calc(100vh - 100px);
+        }
+        .image-container {
+            width: 20%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .upload-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+        }
+        .upload-form h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .error {
+        color: red;
+        /* Other styling as needed */
+        }
+    </style>
+    <script>
+        function validateFile() {
+            var fileName = document.getElementById('audio-file').value;
+            var idxDot = fileName.lastIndexOf(".") + 1;
+            var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
+            if (extFile != "wav") {
+                alert("Only .wav files are allowed!");
+                return false; // Prevent form submission
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Cat/Dog Test</h1>
+        <p class="instructions">
+            Please upload an audio file of a cat or dog. Our AI will analyze the sound to determine if it's a cat or a dog!
+        </p>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="/static/dog.jpg" alt = "Dog">  <!-- Replace with your local dog image filename -->
+        </div>
+        <div class="upload-form">
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+            <h2>Upload Audio File</h2>
+            <form method="post" enctype="multipart/form-data" onsubmit="return validateFile()">
+                <input type="file" name="audio">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="/static/cat.jpg" alt="Cat"> <!-- Replace with your local cat image filename -->
+        </div>
+    </div>
+</body>
+</html>
