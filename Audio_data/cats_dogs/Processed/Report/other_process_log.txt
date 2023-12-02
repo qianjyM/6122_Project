@@ -1,0 +1,116 @@
+Error processing cat_106: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19DA1F290>
+Error processing cat_105: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1957DBEC0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_11: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19FF63810>
+Error processing cat_109: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19FF5E340>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_113: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19FE2A910>
+Error processing cat_112: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19FE591C0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_117: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A01DAE50>
+Error processing cat_114: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A01314E0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_121: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19FDB11D0>
+Error processing cat_118: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A0104F40>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_12: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19FDB11D0>
+Error processing cat_124: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19FFBEAD0>
+Error processing cat_122: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19D989A90>
+Error processing cat_123: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19FE951C0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_126: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19D950540>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_125: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19FFBEAD0>
+Error processing cat_129: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1957D4910>
+Error processing cat_13: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A0004220>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_128: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1957D4910>
+Error processing cat_131: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19D963DD0>
+Error processing cat_132: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A13EA200>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_136: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19EABB250>
+Error processing cat_138: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19E9F7380>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_14: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A00308D0>
+Error processing cat_144: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A1408750>
+Error processing cat_142: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19FCF2840>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_143: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A00308D0>
+Error processing cat_146: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F19D8E82C0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_154: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A266E550>
+Error processing cat_153: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A2669EE0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_16: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A3814F90>
+Error processing cat_157: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A26B9580>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_161: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A272D2D0>
+Error processing cat_159: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A011B380>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_162: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A00FC900>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_163: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A0116B50>
+Error processing cat_164: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A2566020>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_23: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A012F250>
+Error processing cat_21: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A3A989A0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_28: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A5D8B7D0>
+Error processing cat_35: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A0166010>
+Error processing cat_37: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A3BD77E0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_36: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A14E6D50>
+Error processing cat_40: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A01CB600>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_41: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A14FA950>
+Error processing cat_42: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A5D8ECA0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_43: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A0182CA0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_45: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A396C610>
+Error processing cat_46: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A26ACEA0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_48: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A264A950>
+Error processing cat_39: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A27AD580>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_49: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A3BDA910>
+Error processing cat_5: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A3941080>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_58: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A1253990>
+Error processing cat_6: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A12256C0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_60: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A73577D0>
+Error processing cat_61: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A7353E20>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_59: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A7224850>
+Error processing cat_63: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A721EA20>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_62: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A7224850>
+Error processing cat_69: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A3BE91D0>
+Error processing cat_7: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A5CE13A0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_71: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A5DE3610>
+Error processing cat_74: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A5CAA5C0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_79: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F19EA71CD0>
+Error processing cat_83: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A1266480>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_88: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A5EF8310>
+Error processing cat_90: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A3B61EE0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_89: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A3B89050>
+Error processing cat_95: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A25EB420>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing cat_97: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A97A6690>
+Error processing cat_96: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A738C360>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_0: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A74DE910>
+Error processing dog_barking_10: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A74CC210>
+Error processing dog_barking_1: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A6021940>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_103: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A7470850>
+Error processing dog_barking_104: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A7304860>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_108: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A72A72D0>
+Error processing dog_barking_107: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A861DEE0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_110: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A5F32790>
+Error processing dog_barking_106: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A5F93240>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_109: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A5F32790>
+Error processing dog_barking_13: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AAA9A910>
+Error processing dog_barking_112: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AAAC32E0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_11: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AAA9A910>
+Error processing dog_barking_2: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A7465F10>
+Error processing dog_barking_21: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A7465F10>
+Error processing dog_barking_20: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AAB71300>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_24: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A86A2350>
+Error processing dog_barking_25: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A5F08860>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_26: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A3871790>
+Error processing dog_barking_18: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A61677E0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_27: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A3871790>
+Error processing dog_barking_29: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A395A710>
+Error processing dog_barking_3: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A84ED800>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_23: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A395A710>
+Error processing dog_barking_37: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AACC4DD0>
+Error processing dog_barking_34: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AACB96C0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_44: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AAB56DD0>
+Error processing dog_barking_28: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A74B4F40>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_4: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1ABE0B990>
+Error processing dog_barking_46: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AC170A40>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_52: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AC2E0390>
+Error processing dog_barking_51: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1ABF7D8A0>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_75: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AC01B750>
+Error processing dog_barking_76: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A9881120>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_77: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1AC2CA910>
+Error processing dog_barking_78: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AAC17920>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_79: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AAC07C40>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_80: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1B06F6A90>
+Error processing dog_barking_92: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A5F7B610>
+Error processing dog_barking_85: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A277C680>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_93: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1ABEF1D90>
+Error processing dog_barking_91: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1A398BF60>, orientation='portrait') did not call Figure.draw, so no renderer is available
+Error processing dog_barking_96: <matplotlib.backends.backend_agg.RendererAgg object at 0x000001F1A8691F50>
+Error processing dog_barking_98: functools.partial(<function FigureCanvasAgg.print_png at 0x000001F1AF5AA980>, orientation='portrait') did not call Figure.draw, so no renderer is available
