@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import librosa
 import numpy as np
 import os
-import concurrent.futures
 import librosa.display
 
 # Set matplotlib to use a non-interactive backend
@@ -20,21 +19,21 @@ def save_spectrogram(log_mel_spec, sr, file_name, save_path):
     plt.close(fig)
 
 def process_segment(audio_segment, sr, file_name, save_path, log_file, segment_number):
-    # Processes and saves a segment of an audio file
-    max_amplitude = np.max(np.abs(audio_segment))  # Normalize amplitude
-    if max_amplitude > 0:
-        normalized_audio = audio_segment / max_amplitude
-    else:
-        return  # Skip processing if the segment is silent
+    # Skip processing if the segment is silent or nearly silent
+    max_amplitude = np.max(np.abs(audio_segment))
+    if max_amplitude < 1e-4:  # Threshold for silence
+        log_file.write(f"Skipping segment {segment_number + 1} - silent or nearly silent\n")
+        return
 
-    # Generate a mel-spectrogram
+    normalized_audio = audio_segment / max_amplitude
     mel_spec = librosa.feature.melspectrogram(y=normalized_audio, sr=sr, n_fft=512, hop_length=256, n_mels=128)
-    log_mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
+    log_mel_spec = librosa.power_to_db(mel_spec, ref=np.max, amin=1e-6)  # Add small value to avoid log(0)
+    log_mel_spec = np.clip(log_mel_spec, -80, 0)  # Clip values to improve contrast
 
-    # Save the spectrogram as an image file
     segment_file_name = f"{file_name}_segment_{segment_number + 1}"
     save_spectrogram(log_mel_spec, sr, segment_file_name, save_path)
     log_file.write(f"Processed: {segment_file_name}\n")
+
 
 def process_dog_audio(raw_audio, file_name, total_length, sr, save_path, log_file):
     # Processes dog audio files with overlapping windows
@@ -88,28 +87,29 @@ def process_audio_file(file_path, sr, cat_save_path, dog_save_path, cat_log_file
 def main(data_folder_path, cat_save_path, dog_save_path, sr, cat_log_file_name, dog_log_file_name, other_log_file_name):
     # Main function to orchestrate audio processing
     report_directory = os.path.join(data_folder_path, 'Processed', 'Report')
-    os.makedirs(cat_save_path, exist_ok=True)  # Ensure the save path for cat images exists
-    os.makedirs(dog_save_path, exist_ok=True)  # Ensure the save path for dog images exists
-    os.makedirs(report_directory, exist_ok=True)  # Ensure the report directory exists
+    os.makedirs(cat_save_path, exist_ok=True)
+    os.makedirs(dog_save_path, exist_ok=True)
+    os.makedirs(report_directory, exist_ok=True)
 
     # Open log files
     cat_log_file_path = os.path.join(report_directory, cat_log_file_name)
     dog_log_file_path = os.path.join(report_directory, dog_log_file_name)
     other_log_file_path = os.path.join(report_directory, other_log_file_name)
 
-    with open(cat_log_file_path, 'w') as cat_log_file, open(dog_log_file_path, 'w') as dog_log_file, open(other_log_file_path, 'w') as other_log_file:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-            futures = []
-            for file in os.listdir(data_folder_path):
-                if file.endswith('.wav'):
-                    futures.append(executor.submit(
-                        process_audio_file, os.path.join(data_folder_path, file), sr,
-                        cat_save_path, dog_save_path, cat_log_file, dog_log_file, other_log_file))
-            concurrent.futures.wait(futures)
+    with open(cat_log_file_path, 'w') as cat_log_file, \
+         open(dog_log_file_path, 'w') as dog_log_file, \
+         open(other_log_file_path, 'w') as other_log_file:
+
+        for file in os.listdir(data_folder_path):
+            if file.endswith('.wav'):
+                process_audio_file(
+                    os.path.join(data_folder_path, file), sr,
+                    cat_save_path, dog_save_path,
+                    cat_log_file, dog_log_file, other_log_file)
 
 if __name__ == "__main__":
     data_folder_path = r'F:\Desktop\GT_Study\ECE_6122\Final_Project\Audio_data\cats_dogs'
     cat_save_path = os.path.join(data_folder_path, 'Processed', 'Cats')
     dog_save_path = os.path.join(data_folder_path, 'Processed', 'Dogs')
-    sr = 22050
+    sr = 22050  # Sample rate
     main(data_folder_path, cat_save_path, dog_save_path, sr, 'cat_process_log.txt', 'dog_process_log.txt', 'other_process_log.txt')
