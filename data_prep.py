@@ -23,7 +23,7 @@ def process_segment(audio_segment, sr, file_name, save_path, log_file, segment_n
     max_amplitude = np.max(np.abs(audio_segment))
     if max_amplitude < 1e-4:  # Threshold for silence
         log_file.write(f"Skipping segment {segment_number + 1} - silent or nearly silent\n")
-        return
+        return None
 
     normalized_audio = audio_segment / max_amplitude
     mel_spec = librosa.feature.melspectrogram(y=normalized_audio, sr=sr, n_fft=512, hop_length=256, n_mels=128)
@@ -31,9 +31,11 @@ def process_segment(audio_segment, sr, file_name, save_path, log_file, segment_n
     log_mel_spec = np.clip(log_mel_spec, -80, 0)  # Clip values to improve contrast
 
     segment_file_name = f"{file_name}_segment_{segment_number + 1}"
+    image_path = os.path.join(save_path, f"{segment_file_name}_log_mel_spectrogram.png")
     save_spectrogram(log_mel_spec, sr, segment_file_name, save_path)
     log_file.write(f"Processed: {segment_file_name}\n")
 
+    return image_path
 
 def process_dog_audio(raw_audio, file_name, total_length, sr, save_path, log_file):
     # Processes dog audio files with overlapping windows
@@ -83,6 +85,28 @@ def process_audio_file(file_path, sr, cat_save_path, dog_save_path, cat_log_file
             other_log_file.write(f"File does not match 'cat' or 'dog': {file_name}\n")
     except Exception as e:
         other_log_file.write(f"Error processing {file_name}: {e}\n")
+
+def process_test_audio(raw_audio, file_name, sr, save_path, log_file):
+    # Target length for audio segments is 2.5 seconds
+    target_length = int(2.5 * sr)
+    total_length = len(raw_audio)
+
+    # Zero-padding for audio shorter than target length
+    if total_length < target_length:
+        padding = target_length - total_length
+        raw_audio = np.pad(raw_audio, (padding // 2, padding - padding // 2), mode='constant')
+        total_length = target_length
+
+    # Calculate the number of segments and process only odd segments
+    num_segments = int(np.ceil(total_length / target_length))
+    for segment in range(num_segments):
+        if segment % 2 == 0:  # Process only odd segments
+            start_sample = segment * target_length
+            end_sample = min(start_sample + target_length, total_length)
+            audio_segment = raw_audio[start_sample:end_sample]
+            process_segment(audio_segment, sr, file_name, save_path, log_file, segment)
+            if segment == num_segments - 2:  # Stop if this is the second-to-last segment
+                break
 
 def main(data_folder_path, cat_save_path, dog_save_path, sr, cat_log_file_name, dog_log_file_name, other_log_file_name):
     # Main function to orchestrate audio processing
